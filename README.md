@@ -59,15 +59,21 @@
 - Unzip the package
 ```
 # Copy binary zip file to a folder
+
 mkdir /Users/<YOUR-USER>/Documents/terraform-install
+
 COPY Package to "terraform-install" folder
 
 # Unzip
+
 unzip <PACKAGE-NAME>
+
 unzip terraform_1.0.10_darwin_amd64.zip
 
 # Copy terraform binary to /usr/local/bin
+
 echo $PATH
+
 mv terraform /usr/local/bin
 
 # Verify Version
@@ -78,16 +84,19 @@ rm -rf /usr/local/bin/terraform
 ```
 
 ## C) MACOS - Install VSCode Editor and terraform plugin
+
 - [Microsoft Visual Studio Code Editor](https://code.visualstudio.com/download)
 - [Hashicorp Terraform Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
 
 
 ### D) MACOS - Install AWS CLI
+
 - [AWS CLI Install](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 - [Install AWS CLI - MAC](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html#cliv2-mac-install-cmd)
 
 ```
 # Install AWS CLI V2
+
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
 which aws
@@ -141,19 +150,28 @@ $ for var in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_SECUR
 - Copy the `terraform.exe` to a `binaries`
 - Set PATH in windows
    **How to set the windows path: Windows 8/10**
+
           In Search, search for and then select:
+
           System (Control Panel)
+
           Click the Advanced system settings link.
+
           Click Environment Variables.
+
           In the section System Variables find the PATH environment variable and select it.
+
           Click Edit. If the PATH environment variable does not exist, click New.
+
           In the Edit System Variable (or New System Variable) window, specify the value of the PATH environment variable.
+
           Click OK. Close all remaining windows by clicking OK.
 
 - Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 
 ## Terraform install on windows using a packet manager
 -Install terraform on windows using the windows package manager(Use powershell and install as administrator).
+
     **$ choco install terraform**
 
 ## G) Linux OS - Terraform & AWS CLI Install
